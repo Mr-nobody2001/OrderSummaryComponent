@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+* {
+  margin: 0px;
+  border: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e0e8ff;
+}
+
+@media screen and (min-width: 350px) and (orientation: landscape) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 0px 100px 0px;
+  }
+}
+
+#BodyBackground {
+  width: 100%;
+}
+
+@media screen and (min-width: 350px) and (orientation: landscape) {
+  #BodyBackground {
+    position: absolute;
+  }
+}
+
+@media screen and (min-width: 576px) and (min-height: 438px) {
+  #BodyBackground {
+    position: static;
+  }
+}
+
+#Card {
+  position: absolute;
+  min-width: 10%;
+  top: 50vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  background-color: #ffffff;
+}
+
+@media screen and (min-width: 350px) and (orientation: landscape) {
+  #Card {
+    position: static;
+    transform: translate(0%, 0%);
+    margin-top: 100px;
+    min-width: 200px;
+    width: 60%;
+    max-width: 400px;
+  }
+}
+
+@media screen and (min-width: 576px) and (min-height: 438px) {
+  #Card {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    margin-top: 0px;
+    min-width: 300px;
+    width: 500px;
+    max-width: none;
+  }
+}
+
+#CardFigure figure,
+img {
+  border-radius: 20px 20px 0px 0px;
+  width: 100%;
+}
+
+#TextContent {
+  font-family: "Red Hat Display", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  text-align: center;
+  padding: 30px 15px;
+}
+
+@media screen and (min-width: 350px) {
+  #TextContent {
+    padding: 30px 35px;
+  }
+}
+
+@media screen and (min-width: 576px) and (min-height: 438px) {
+  #TextContent {
+    padding: 30px 50px;
+    gap: 20px;
+  }
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #1f2f56;
+}
+
+#FirstArticle p {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #7280a7;
+}
+
+#GrossContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-radius: 15px;
+  background-color: rgba(224, 232, 255, 0.2);
+}
+
+#GrossContainer figure img {
+  width: 65px;
+}
+
+#GrossContainer p:first-child {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1f2f56;
+}
+
+#GrossContainer p:last-child {
+  font-size: 0.95rem;
+  color: #7280a7;
+}
+
+#GrossContainer a {
+  color: #3829e0;
+}
+
+@media screen and (min-width: 576px) and (min-height: 438px) {
+  #GrossContainer a:hover {
+    color: #7e75e1;
+  }
+}
+
+button {
+  font-family: "Red Hat Display", sans-serif;
+  width: 100%;
+  height: 55px;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #f5f7ff;
+  background-color: #3829e0;
+  box-shadow: 0px 20px 30px rgba(31, 47, 86, 0.15);
+}
+
+@media screen and (min-width: 576px) and (min-height: 438px) {
+  button {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 576px) and (min-height: 438px) {
+  button:hover {
+    background-color: #7e75e1;
+    cursor: pointer;
+  }
+}
+
+#TextContent > a {
+  font-weight: 700;
+  color: #7280a7;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 576px) and (min-height: 438px) {
+  #TextContent > a:hover {
+    color: #1f2f56;
+  }
+}
